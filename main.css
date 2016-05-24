@@ -55,6 +55,10 @@ body {
     font-weight: bolder;
 }
 
+#bottomPage {
+    padding: 2% 4%;
+}
+
 /* Home Page (body) */
 
 #myName {
@@ -86,4 +90,33 @@ body {
 /* About Page */
 #mySpecialty {
     font-style: italic;
+}
+
+#aboutMeDiv {
+    padding: 0 6%;
+}
+
+#tooboxDiv {
+    max-width: 400px;
+}
+
+#skillsDiv {
+    max-width: 400px;
+}
+
+#skillsDiv h4 {
+    margin: 36% 0 2% 0;
+}
+
+#skillsDiv ul {
+    list-style-type: none;
+}
+
+
+#skillsetCol1 {
+    text-align: left;
+}
+
+#skillsetCol2 {
+    text-align: left;
 }
