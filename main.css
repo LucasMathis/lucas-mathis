@@ -104,6 +104,10 @@ body {
     max-width: 400px;
 }
 
+#skillsDiv h4 {
+    margin: 36% 0 2% 0;
+}
+
 #skillsDiv ul {
     list-style-type: none;
 }
