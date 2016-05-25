@@ -121,6 +121,15 @@ body {
     text-align: left;
 }
 
+#rightSideContact {
+    margin-top: 18%;
+}
+
 textarea {
     width: 100%;
+    background-color: #fff;
+}
+
+#emailMsg {
+    border-radius: 4px;
 }
