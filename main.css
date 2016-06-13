@@ -97,15 +97,22 @@ body {
 }
 
 #tooboxDiv {
-    max-width: 400px;
+    max-width: 460px;
+}
+
+
+
+#tooboxDiv div {
+    text-align: left;
 }
 
 #skillsDiv {
-    max-width: 400px;
+    max-width: 460px;
 }
 
 #skillsDiv h4 {
-    margin: 36% 0 2% 0;
+    text-align: center;
+    margin: 36% 0 0 0;
 }
 
 #skillsDiv ul {
@@ -122,14 +129,30 @@ body {
 }
 
 #rightSideContact {
-    margin-top: 18%;
+    margin: 18% auto 0 auto;
+    text-align: justify;
+}
+
+#rightSideContact input{
+    width: 80%;
 }
 
 textarea {
-    width: 100%;
+    width: 80%;
     background-color: #fff;
+    border: 1px solid #ccc;
 }
 
 #emailMsg {
     border-radius: 4px;
+}
+
+#formSubmitButton {
+    max-width: 20%;
+    min-width: 80px;
+    color: #fff;
+    background-color: #6496c8;
+    text-shadow: -1px 1px #ccc;
+    border: none;
+    border-radius: 2px;
 }
