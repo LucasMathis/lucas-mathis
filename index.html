@@ -4,6 +4,7 @@
    <title>Lucas Mathis | Home</title>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="icon" type="image/ico" href="favicon.ico?">
     
    <!-- Latest compiled and minified CSS -->
    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -21,16 +22,15 @@
     
 <body>
 <a name="top"></a>
-<nav class="navbar navbar-default">
+<nav class="navbar-default">
    <div class="container-fluid">
-      
       <div class="navbar-header">
          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
          </button>
-         <a class="navbar-brand" href="#"><img id="mainLogo" src="./images/logo/LM_logo.png" alt="Lucas Mathis"></a>
+         <a class="navbar-brand" href="index.html"><img id="mainLogo" src="./images/logo/LM_logo.png" alt="Lucas Mathis"></a>
     </div>
       
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -46,8 +46,8 @@
   </div>
 </nav>
 
-<div class="row text-center">
-    <div class="col-xs-12">
+<div id="myNameDiv" class="row text-center">
+    <div class="col-sm-12">
        <img id="myName" src="images/MyName.png">
        <!--<h1 id="myName">Lucas Mathis</h1>-->
     </div>
@@ -61,38 +61,164 @@
 </div>
     
 <div class="row text-center topRow">
+    
+   <!-- First Portfolio Item -->
    <div class="col-sm-4 portImgDiv">
-       <p>Mustard's Last Stand<br />
+       <p data-toggle="modal" data-target="#myModal1">Mustard's Last Stand<br />
          Skills Used: HTML/CSS3, JavaScript</p>
+       
+       <div class="modal fade" id="myModal1" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content 1 -->
+              <div id="modalContents1" class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Mustard's Last Stand</h4>
+                </div>
+                <div class="modal-body customBdy">
+                  <img src="./images/portfolioImages/mustardsLastStand.jpg">
+                  <h5>This project is a faux restaurant created as a school project between two other students and myself. I really enjoyed helping create it because all 3 of us were dedicated to our work and our skills aligned well with each others. It turned out to be a great blend of HTML/CSS, JavaScript, and teamwork.</h5>
+                </div>
+                <div class="modal-footer customFtr">
+                  <button type="button" class="btn btn-default customBtn" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+      </div>
       <img src="./images/portfolioImages/mustardsLastStand.jpg">
    </div>
+    
+   <!-- Second Portfolio Item -->    
    <div class="col-sm-4 portImgDiv">
-      <p>BSquared<br />
+      <p data-toggle="modal" data-target="#myModal2">b[squared]<br />
          Skills Used: HTML/CSS3, Bootstrap, JavaScript, Jquery, PHP, MySQL</p>
-      <img src="./images/portfolioImages/bsquared.jpg">
+      <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content 2 -->
+              <div id="modalContents2" class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">b[squared]</h4>
+                </div>
+                <div class="modal-body customBdy">
+                  <img src="./images/portfolioImages/bsquared.JPG">
+                  <h5>This website was developed during my Senior year to act as a portfolio website for our cohort. What initially began as a team website, later represented the entire class. Everyone put quite a bit of work into this project using GitHub, Trello, and an agile project management style to create this database-driven, responsive, scalable website.</h5>
+                </div>
+                <div class="modal-footer customFtr">
+                  <button type="button" class="btn btn-default customBtn" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+      </div>
+      <img src="./images/portfolioImages/bsquared.JPG">
    </div>
+    
+   <!-- Third Portfolio Item -->
    <div class="col-sm-4 portImgDiv">
-      <p>Greenbox<br />
+      <p data-toggle="modal" data-target="#myModal3">greenbox<br />
          Skills Used: HTML/CSS3, JavaScript, PHP</p>
+      <div class="modal fade" id="myModal3" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content 3 -->
+              <div id="modalContents3" class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">greenbox</h4>
+                </div>
+                <div class="modal-body customBdy">
+                  <img src="./images/portfolioImages/greenBox.jpg">
+                  <h5>This project was the work of a Web Development group consisted of myself and 2 others. It is a ficticious company (very similar to redbox), where users can looks at movie availabilities and add them to their cart. There is a lot of functionality behind the scenes for this project which is powered by PHP and includes tons of added functionality through JavaScript/JQuery.</h5>
+                </div>
+                <div class="modal-footer customFtr">
+                  <button type="button" class="btn btn-default customBtn" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+      </div>
       <img src="./images/portfolioImages/greenBox.jpg">
    </div>
 </div>
 
 <div class="row text-center">
+    <!-- Fourth Portfolio Item -->
    <div class="col-sm-4 portImgDiv">
-      <p>Blue Ride Taxi<br />
+      <p data-toggle="modal" data-target="#myModal4">Blue Ride Taxi<br />
          Skills Used: HTML/CSS3, JavaScript, PHP, Bootstrap</p>
+      <div class="modal fade" id="myModal4" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content 4 -->
+              <div id="modalContents4" class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Blue Ride</h4>
+                </div>
+                <div class="modal-body customBdy">
+                  <img src="./images/portfolioImages/blueRide.jpg">
+                  <h5>This was one of my first project for an actual client. It was based off of a Bootstrap Template that I restyled and added content to. I feel that I did a great job creating a website that reflected the company. I enjoyed working with someone who didn't know much about web development; it allowed me to test my ability to communicate with less technical people than myself and I feel like I excelled.</h5>
+                </div>
+                <div class="modal-footer customFtr">
+                  <button type="button" class="btn btn-default customBtn" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+      </div>
       <img src="./images/portfolioImages/blueRide.jpg">
    </div>
+    
+   <!-- Fifth Portfolio Item -->
    <div class="col-sm-4 portImgDiv">
-      <p>Mama Looney's Pizza<br />
+      <p data-toggle="modal" data-target="#myModal5">Mama Looney's Pizza<br />
          Skills Used: HTML/CSS3, Bootstrap Template Alteration</p>
+      <div class="modal fade" id="myModal5" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content 5 -->
+              <div id="modalContents5" class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Mama Looney's</h4>
+                </div>
+                <div class="modal-body customBdy">
+                  <img src="./images/portfolioImages/mamaLooneys.jpg">
+                  <h5>Mama Looney's is a small pizza place that needed a static website to help drive sales and provide information to potential customers. This project tested my ability to convert information into a digital format. With a rather complex menu, a clean design and user-friendly website was an absolute must. Working with business owners is always a joy because they take so much pride in their business.</h5>
+                </div>
+                <div class="modal-footer customFtr">
+                  <button type="button" class="btn btn-default customBtn" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+      </div>
       <img src="./images/portfolioImages/mamaLooneys.jpg">
    </div>
+    
+   <!-- Sixth Portfolio Item -->
    <div class="col-sm-4 portImgDiv">
-      <p>Xtreme Car Audio<br />
+      <p data-toggle="modal" data-target="#myModal6">XTREME CAR AUDIO<br />
          Skills Used: HTML/CSS3, Bootstrap Template, JavaScript, Photoshop</p>
-      <img src="./images/portfolioImages/xtremeCarAudio.jpg">
+      <div class="modal fade" id="myModal6" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content 6 -->
+              <div id="modalContents6" class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">XTREME CAR AUDIO</h4>
+                </div>
+                <div class="modal-body customBdy">
+                  <img src="./images/portfolioImages/xtremeCarAudio.JPG">
+                  <h5>This was another one of my first projects working with a client. This website is based off a template so the structure of the website came about quickly. The design of the website is what I pride myself on for this project. It's the small details and clean look that make this project special. Advocating for the end-user is what it's all about.</h5>
+                </div>
+                <div class="modal-footer customFtr">
+                  <button type="button" class="btn btn-default customBtn" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+      </div>
+      <img src="./images/portfolioImages/xtremeCarAudio.JPG">
    </div>
 </div>
 

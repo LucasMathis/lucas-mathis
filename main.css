@@ -2,12 +2,13 @@
 
 File: main.css
 Author: Lucas Mathis
-Last Edit: 05/16/2016
+Last Edit: 06/14/2016
 
 */
 
 
 /* Main CSS Styles */
+
 
 @font-face { 
     font-family: yuGotchicLight;
@@ -30,7 +31,7 @@ body {
 /* Navigation Styles */
 .navbar {
     border-radius: 0px;
-    height:120px;
+    min-height: 120px;
     background-color: #EEFFFF;
     padding: 0;
     margin: 0;
@@ -47,7 +48,7 @@ body {
 }
 
 #mainLogo {
-    margin: 48px 0 0 80px;
+    margin: 20% 0 0 20%;
     border: 2px solid black;
 }
 
@@ -61,8 +62,12 @@ body {
 
 /* Home Page (body) */
 
+#myNameDiv {
+    margin-top: 10%;
+}
+
 #myName {
-    margin: 8% 0 0 0;
+    margin: 0 0 0 0;
 }
 
 #introPar {
@@ -95,7 +100,7 @@ body {
 .portImgDiv p:hover {
     position: absolute;
     opacity: 1.0;
-    
+    cursor: pointer;
 }
 
 .portImgDiv {
@@ -111,7 +116,52 @@ body {
 }
 
 #viewMoreDiv {
+    margin: 6% 0 4% 0;
+}
+
+#viewMoreDiv a {
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+#viewMoreDiv a:hover {
+    text-decoration: none;
+}
+
+/* Pop-up Project Modals */
+.modal {
+    max-width: 96%;
+}
+
+#modalContents1 h4 {
+    font-weight: bolder;
+}
+
+.customBdy h5 {
+    letter-spacing: 0.5;
     margin-top: 4%;
+    font-size: 120%;
+}
+
+.customBdy h5 a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.customFtr {
+
+}
+
+.customBtn {
+    color: black;
+}
+
+.customBtn:hover {
+    font-weight: bolder;
+    background-color: #fff;
+    border: 1px solid #000;
 }
 
 /* About Page */
@@ -127,8 +177,6 @@ body {
     max-width: 460px;
     font-size: 100%;
 }
-
-
 
 #tooboxDiv div {
     text-align: left;
@@ -157,9 +205,32 @@ body {
     text-align: left;
 }
 
+/* Contact Page Styles */
+
+.contactLeftSide {
+    margin-top: 4%;
+    max-width: 96%;
+}
+
+.contactLeftSide p {
+    max-width: 80%;
+    margin: 4% auto;
+    font-size: 170%;
+}
+
+#availabilityP {
+    font-size: 200%;
+    font-weight: 200;
+}
+
+#contactHeader {
+    margin: 10% 0 4% 0;
+}
+
 #rightSideContact {
-    margin: 18% auto 0 auto;
+    margin: 12% auto 0 auto;
     text-align: justify;
+    max-width: 96%;
 }
 
 #rightSideContact input{
@@ -170,10 +241,14 @@ textarea {
     width: 80%;
     background-color: #fff;
     border: 1px solid #ccc;
+    border-radius: 4px;
+    transition-timing-function: ease;
 }
 
-#emailMsg {
-    border-radius: 4px;
+textarea:focus, .form-control:focus{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
 }
 
 #formSubmitButton {
@@ -182,6 +257,14 @@ textarea {
     color: #fff;
     background-color: #6496c8;
     text-shadow: -1px 1px #ccc;
-    border: none;
-    border-radius: 2px;
+    border: 1px solid rgba(0,0,0,0.0);
+    border-radius: 4px;
+    padding: 2% 0;
+    font-size: 120%;
+}
+
+#formSubmitButton:hover {
+    color: #6496c8;
+    background-color: #fff;
+    border: 1px solid #ccc;
 }
