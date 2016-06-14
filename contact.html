@@ -35,10 +35,10 @@
       
     <div class="collapse navbar-collapse" id="myNavbar">
        <ul id="navList" class="nav navbar-nav navbar-right text-uppercase">
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="works.html">Works</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="http://lucaswebdevelopment.blogspot.com/" target="_blank">Blog</a></li>
           <li class="activeL"><a href="#">Contact</a></li>
        </ul>
     </div>
@@ -51,22 +51,22 @@
        <h1 id="myName">Contact</h1>
     </div>
     <div id="rightSideContact" class="col-sm-6">
-       <form>
+       <form action="sendMyMail.php" method="post">
           <div class="form-group">
              <label for="name">Name</label>
-             <input type="text" class="form-control" id="name">
+             <input type="text" class="form-control" id="name" name="sendersName">
           </div>
            
           <div class="form-group">
              <label for="email">Email</label>
-             <input type="email" class="form-control" id="email">
+             <input type="email" class="form-control" id="sendersEmail" name="sendersEmail">
           </div>
           
           <div class="form-group">
-             <label for="message">Your Message</label>
-             <textarea id="emailMsg" rows="4"></textarea>
+             <label for="message">Your Message</label><br/>
+             <textarea id="emailMsg" rows="4" name="emailMsg"></textarea>
           </div>
-        
+          <input id="formSubmitButton" type="submit" value="Submit">
         
        </form>
         
@@ -81,9 +81,15 @@
 
 <div id="bottomPage" class="row">
    <div class="col-sm-6">
-      <img src="images/socialMedia/linkedInIcon.png">
-      <img src="images/socialMedia/githubIcon.png">
-      <img src="images/socialMedia/facebookIcon.png">
+      <a target="_blank" href="https://www.linkedin.com/in/lucas-mathis-development">
+         <img src="images/socialMedia/linkedInIcon.png">
+      </a>
+      <a target="_blank" href="https://github.com/LucasMathis">
+         <img src="images/socialMedia/githubIcon.png">    
+      </a>
+      <a target="_blank" href="https://www.facebook.com/profile.php?id=100006696736786">
+          <img src="images/socialMedia/facebookIcon.png">
+      </a>
    </div>
    <div class="col-sm-6 text-right">
       <a href="#"><img src="images/topOfPageIcon.png"></a>
