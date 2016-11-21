@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>Lucas Mathis | About</title>
+   <title>Lucas Mathis | Contact</title>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="icon" type="image/ico" href="favicon.ico?">
@@ -14,6 +14,9 @@
 
    <!-- Latest compiled JavaScript -->
    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+   <!-- Google's reCAPTCHA -->
+   <script src='https://www.google.com/recaptcha/api.js'></script>
     
    <!-- Main CSS -->
    <link rel="stylesheet" type="text/css" href="main.css">
@@ -37,82 +40,56 @@
     <div class="collapse navbar-collapse" id="myNavbar">
        <ul id="navList" class="nav navbar-nav navbar-right text-uppercase">
           <li><a href="index.html">Home</a></li>
-          <li class="activeL"><a href="#">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="works.html">Works</a></li>
           <li><a href="http://lucaswebdevelopment.blogspot.com/" target="_blank">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li class="activeL"><a href="#">Contact</a></li>
        </ul>
     </div>
       
   </div>
 </nav>
 
-<div id="aboutHeader" class="row text-center">
-    <div class="col-xs-12">
-       <img id="myName" src="images/MyName.png">
-       <!--<h1 id="myName">Lucas Mathis</h1>-->
+<div class="row">
+    <div class="col-sm-6 text-center contactLeftSide">
+       <h1 id="contactHeader">Contact</h1>
+       <p>Please feel free to contact me with any questions. I typically respond within 24 hours.</p>
+        <p id="availabilityP">I am currently available for hire through contract or full-time employment.</p>
+    </div>
+    <div  id="rightSideContact" class="col-sm-6">
+       <h3>Contact Me!</h3><br />
+
+       <form action="sendMyMail.php" method="post">
+          <div class="form-group">
+             <label for="name">Name</label>
+             <input type="text" class="form-control" id="name" name="sendersName">
+          </div>
+           
+          <div class="form-group">
+             <label for="email">Email</label>
+             <input type="email" class="form-control" id="sendersEmail" name="sendersEmail">
+          </div>
+          
+          <div class="form-group">
+             <label for="message">Your Message</label><br/>
+             <textarea id="emailMsg" rows="4" name="emailMsg"></textarea>
+          </div>
+
+          <div class="g-recaptcha" data-sitekey="6Lf3aQwUAAAAABzAssa5SF3fnazG9uamu62qaMQy"></div>
+          <input id="formSubmitButton" type="submit" value="Submit">
+
+        
+       </form>
+        
     </div>
 </div>
-    
-<div class="row text-center">
-    <div class="col-xs-12">
-       <h4 id="mySpecialty">Web Developer / Designer</h4>
-    </div>
-</div>
-    
-<div class="row text-center topRow">
-   <div id="aboutMeDiv" class="col-sm-6">
-       <h4>ABOUT</h4><br />
-       <p>As of Spring 2016, I am a graduate of Olympic College and have recieved my Bachelor's in Information Systems. I am currently seeking a position as a Junior Web Developer, while I continue to work on freelance projects. I love the development process, learning about new technologies, and being an advocate for the end-user.</p>
-       <p>In my free time I enjoy hanging out with my family, playing poker, and playing in the outdoors. I grew up in South Carolina and the Washington area is relatively new to me, but there are truly so many cool places to explore. I like hiking, camping, kayaking, and many other outdoor activities. Having a well-balanced life is important to me.</p>
-   </div>
-    
-   <div id="tooboxDiv" class="col-sm-6">
-       <h4>TOOLBOX</h4><br />
-       <div class="col-sm-6">
-          <p><img src="images/ToolboxIcons/github.png"> Github</p>
-          <p><img src="images/ToolboxIcons/dreamweaver.png"> Dreamweaver</p>
-          <p><img src="images/ToolboxIcons/photoshop.png"> Photoshop</p>
-       </div>
-       
-       <div class="col-sm-6">
-          <p><img src="images/ToolboxIcons/xampp.png"> XAMPP</p>
-          <p><img src="images/ToolboxIcons/pencilProject.png"> Pencil Project</p>
-          <p><img src="images/ToolboxIcons/msOffice.png"> Microsoft Office</p>
-       </div>
-       
-       <br>
-       
-       <div id="skillsDiv">
-           <h4>SKILLSET</h4><br />
-           <div id="centerDiv">
-               <div id="skillsetCol1" class="col-sm-6">
-                  <ul>
-                     <li>&#9856; HTML5</li>
-                     <li>&#9857; CSS3</li>
-                     <li>&#9858; JavaScript</li>
-                  </ul>
-               </div>
 
-               <div id="skillsetCol2" class="col-sm-6">
-                  <ul>
-                     <li>&#9859; MYSQL</li>
-                     <li>&#9860; PHP</li>
-                     <li>&#9861; XML</li>
-                  </ul>
-               </div>
-           </div>
-       </div>
-   </div>
-   
+<div class="row">
+    <div>
     
-    
+    </div>    
 </div>
 
-
-
-
-    
 <div id="bottomPage" class="row">
    <div class="col-sm-6 socIcons">
       <a target="_blank" href="https://www.linkedin.com/in/lucas-mathis-development">
@@ -129,8 +106,7 @@
       <a href="#"><img src="images/topOfPageIcon.png"></a>
    </div>
 </div>
-    
-    <div id="bottomPage" class="row text-center">
+<div id="bottomPage" class="row text-center">
    <div class="col-sm-12">
        <p>&copy; 2016 Lucas Mathis</p>
    </div>

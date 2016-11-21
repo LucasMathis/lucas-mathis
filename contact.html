@@ -14,6 +14,9 @@
 
    <!-- Latest compiled JavaScript -->
    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+   <!-- Google's reCAPTCHA -->
+   <script src='https://www.google.com/recaptcha/api.js'></script>
     
    <!-- Main CSS -->
    <link rel="stylesheet" type="text/css" href="main.css">
@@ -50,11 +53,12 @@
 <div class="row">
     <div class="col-sm-6 text-center contactLeftSide">
        <h1 id="contactHeader">Contact</h1>
-       <p>Please feel free to contact me with any questions. I typically respond within 24 hours throughout the week and periodically throughout the weekend.</p>
-        <p id="availabilityP">I am currently available for hire for freelancing, through contract, or full-time employment.</p>
+       <p>Please feel free to contact me with any questions. I typically respond within 24 hours.</p>
+        <p id="availabilityP">I am currently available for hire through contract or full-time employment.</p>
     </div>
     <div  id="rightSideContact" class="col-sm-6">
-       <h3>Contact Form</h3><br />
+       <h3>Contact Me!</h3><br />
+
        <form action="sendMyMail.php" method="post">
           <div class="form-group">
              <label for="name">Name</label>
@@ -70,7 +74,10 @@
              <label for="message">Your Message</label><br/>
              <textarea id="emailMsg" rows="4" name="emailMsg"></textarea>
           </div>
+
+          <div class="g-recaptcha" data-sitekey="6Lf3aQwUAAAAABzAssa5SF3fnazG9uamu62qaMQy"></div><br>
           <input id="formSubmitButton" type="submit" value="Submit">
+
         
        </form>
         
@@ -84,7 +91,7 @@
 </div>
 
 <div id="bottomPage" class="row">
-   <div class="col-sm-6">
+   <div class="col-sm-6 socIcons">
       <a target="_blank" href="https://www.linkedin.com/in/lucas-mathis-development">
          <img src="images/socialMedia/linkedInIcon.png">
       </a>
