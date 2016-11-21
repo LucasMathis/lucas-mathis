@@ -16,7 +16,7 @@
    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
    <!-- Google's reCAPTCHA -->
-   <script src='https://www.google.com/recaptcha/api.js'></script>
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     
    <!-- Main CSS -->
    <link rel="stylesheet" type="text/css" href="main.css">
@@ -75,10 +75,8 @@
              <textarea id="emailMsg" rows="4" name="emailMsg"></textarea>
           </div>
 
-          <div class="g-recaptcha" data-sitekey="6Lf3aQwUAAAAABzAssa5SF3fnazG9uamu62qaMQy"></div><br>
-          <input id="formSubmitButton" type="submit" value="Submit">
-
-        
+          <div class="g-recaptcha" data-sitekey="6Lf3aQwUAAAAABzAssa5SF3fnazG9uamu62qaMQy"></div> <br>
+          <input id="formSubmitButton" name="submit" type="submit" value="Submit">
        </form>
         
     </div>
