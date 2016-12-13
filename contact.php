@@ -16,18 +16,10 @@
    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
    <!-- Google's reCAPTCHA -->
-   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+   <script src='https://www.google.com/recaptcha/api.js'></script>
     
    <!-- Main CSS -->
    <link rel="stylesheet" type="text/css" href="main.css">
-
-   <!-- Favicon -->
-   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-   <link rel="manifest" href="/manifest.json">
-   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-   <meta name="theme-color" content="#ffffff">
     
 </head>
     
@@ -83,8 +75,10 @@
              <textarea id="emailMsg" rows="4" name="emailMsg"></textarea>
           </div>
 
-          <div class="g-recaptcha" data-sitekey="6Lf3aQwUAAAAABzAssa5SF3fnazG9uamu62qaMQy"></div> <br>
-          <input id="formSubmitButton" name="submit" type="submit" value="Submit">
+          <div class="g-recaptcha" data-sitekey="6Lf3aQwUAAAAABzAssa5SF3fnazG9uamu62qaMQy"></div>
+          <input id="formSubmitButton" type="submit" value="Submit">
+
+        
        </form>
         
     </div>
